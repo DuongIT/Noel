@@ -1,0 +1,124 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width:1023px) {
+    .bgr-container .box-bgr .moon {
+        top: 50px;
+        right: 5%;
+    }
+
+    .box-bgr .christmas-tree {
+        top: 50%;
+        left: -10%;
+    }
+
+    .house {
+        top: 30%;
+        right: -2%;
+    }
+    
+    .santa1 {
+        left: 40%;
+    }
+
+    .box-noel-gif .noel-gif1 {
+        top: 40rem;
+    }
+
+    .noel-gift2{
+        top: 37rem;
+    }
+    
+    @keyframes noelGift2{
+        0%{
+            transform: translateX(10px);
+        }
+        50%{
+            transform: translateX(-400px);
+        }
+        51%{
+            transform: translateX(-400px) scaleX(-1);
+    
+        }
+        99%{
+            transform: translateX(10px) scaleX(-1);
+        }
+        100%{
+            transform: translateX(10px);
+        }
+    }
+    
+    @keyframes boxGift{
+        0%{
+            left: 50%;
+            transform: translate(-50%, -100px) rotate(45deg);
+        }
+        30%, 40%{
+            left: 50%;
+            transform: translate(-50%, 650px) rotate(45deg);
+        }
+        50%,100%{
+            left: 50%;
+            transform: translate(-50%, 650px) rotate(0deg);
+            transform-origin: bottom right;
+        }
+    }
+
+    .image-santa-content {
+        /* display: none; */
+        left: -60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+
+    .box-bgr .box-text-noel .text-noel {
+        width: 350px;
+    }
+
+    .box-bgr .box-text-noel .text-noel img {
+        width: 250px;
+    }
+
+    .box-bgr .christmas-tree {
+        top: 40%;
+        transform: translateX(-10rem);
+    }
+
+    .house {
+        top: 15%;
+        transform: translateX(17rem);
+    }
+
+    .box-noel-gif {
+        top: 50px;
+        transform: translateX(-5rem);
+    }
+
+    .noel-gift2 {
+        top: 350px;
+    }
+
+    @keyframes noelGift2{
+        0%{
+            transform: translateX(10px);
+        }
+        50%{
+            transform: translateX(-100px);
+        }
+        51%{
+            transform: translateX(-100px) scaleX(-1);
+    
+        }
+        99%{
+            transform: translateX(10px) scaleX(-1);
+        }
+        100%{
+            transform: translateX(10px);
+        }
+    }
+}
